@@ -87,7 +87,7 @@
     }
 
     section button {
-        border: none;
+        border: 5px solid transparent;
     }
 
     section img {
@@ -95,6 +95,12 @@
         height: auto;
         width: fit-content;
         margin: 0;
+    }
+
+    section ion-icon {
+        color: green;
+        font-size: 16px;
+        display: none;
     }
 
     section>div {
@@ -115,5 +121,12 @@
         align-items: flex-start;
         padding: 14px;
         margin-right: 16px;
+    }
+
+    section>div>div>button>div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
     }
 }
