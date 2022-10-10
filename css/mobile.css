@@ -1,9 +1,8 @@
+html {
+    max-width: 614px;
+}
+
 @media (max-width: 614px) {
-
-    html {
-        max-width: 614px;
-    }
-
     body {
         background-color: #E5E5E5;
     }
@@ -23,6 +22,7 @@
         border-radius: 50px;
         width: 364px;
         height: 61px;
+
     }
 
     footer div {
@@ -43,6 +43,12 @@
         font-size: 16px;
         font-weight: 700;
         color: #333333;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-family: 'Roboto';
     }
 
     h3 {
@@ -69,6 +75,11 @@
         font-size: 44px;
         font-weight: 400;
         color: #FFFFFF;
+    }
+
+    header p,
+    h1 {
+        font-family: 'Righteous';
     }
 
     header p:nth-child(2) {
@@ -98,7 +109,7 @@
     }
 
     section ion-icon {
-        color: green;
+        color: #32B72F;
         font-size: 16px;
         display: none;
     }
