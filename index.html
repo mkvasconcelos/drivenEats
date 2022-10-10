@@ -20,57 +20,57 @@
             <h1>Primeiro, seu prato</h1>
             <div>
                 <div>
-                    <button id="food-one" onclick="card(this.id)">
+                    <button id="food-one" onclick="card(this.id,this.value)" value="0">
                         <img src="img/frango_yin_yang 1.jpg" alt="">
                         <h2>Frango Yin Yang</h2>
                         <h3>Um pouco de batata, um pouco de salada</h3>
                         <div>
-                            <h4>R$ 14,90</h4>
-                            <ion-icon id="food-checkmark-one" name="checkmark-circle-outline"></ion-icon>
+                            <h4>R$ <span>14,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </button>
                 </div>
                 <div>
-                    <button id="food-two" onclick="card(this.id)">
+                    <button id="food-two" onclick="card(this.id,this.value)" value="0">
                         <img src="img/frango_yin_yang 1.jpg" alt="">
                         <h2>Frango Yin Yang</h2>
                         <h3>Um pouco de batata, um pouco de salada</h3>
                         <div>
-                            <h4>R$ 14,90</h4>
-                            <ion-icon id="food-checkmark-two" name="checkmark-circle-outline"></ion-icon>
+                            <h4>R$ <span>14,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </button>
                 </div>
                 <div>
-                    <button id="food-three" onclick="card(this.id)">
+                    <button id="food-three" onclick="card(this.id,this.value)" value="0">
                         <img src="img/frango_yin_yang 1.jpg" alt="">
                         <h2>Frango Yin Yang</h2>
                         <h3>Um pouco de batata, um pouco de salada</h3>
                         <div>
-                            <h4>R$ 14,90</h4>
-                            <ion-icon id="food-checkmark-three" name="checkmark-circle-outline"></ion-icon>
+                            <h4>R$ <span>14,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </button>
                 </div>
                 <div>
-                    <button id="food-four" onclick="card(this.id)">
+                    <button id="food-four" onclick="card(this.id,this.value)" value="0">
                         <img src="img/frango_yin_yang 1.jpg" alt="">
                         <h2>Frango Yin Yang</h2>
                         <h3>Um pouco de batata, um pouco de salada</h3>
                         <div>
-                            <h4>R$ 14,90</h4>
-                            <ion-icon id="food-checkmark-four" name="checkmark-circle-outline"></ion-icon>
+                            <h4>R$ <span>14,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </button>
                 </div>
                 <div>
-                    <button id="food-five" onclick="card(this.id)">
+                    <button id="food-five" onclick="card(this.id,this.value)" value="0">
                         <img src="img/frango_yin_yang 1.jpg" alt="">
                         <h2>Frango Yin Yang</h2>
                         <h3>Um pouco de batata, um pouco de salada</h3>
                         <div>
-                            <h4>R$ 14,90</h4>
-                            <ion-icon id="food-checkmark-five" name="checkmark-circle-outline"></ion-icon>
+                            <h4>R$ <span>14,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </button>
                 </div>
@@ -78,11 +78,123 @@
         </section>
         <section>
             <h1>Agora, sua bebida</h1>
-
+            <div>
+                <div>
+                    <button id="beverage-one" onclick="card(this.id,this.value)" value="1">
+                        <img src="img/coquinha_gelada 1.jpg" alt="">
+                        <h2>Coquinha gelada</h2>
+                        <h3>Lata 350mL</h3>
+                        <div>
+                            <h4>R$ <span>4,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button id="beverage-two" onclick="card(this.id,this.value)" value="1">
+                        <img src="img/coquinha_gelada 1.jpg" alt="">
+                        <h2>Coquinha gelada</h2>
+                        <h3>Lata 350mL</h3>
+                        <div>
+                            <h4>R$ <span>4,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button id="beverage-three" onclick="card(this.id,this.value)" value="1">
+                        <img src="img/coquinha_gelada 1.jpg" alt="">
+                        <h2>Coquinha gelada</h2>
+                        <h3>Lata 350mL</h3>
+                        <div>
+                            <h4>R$ <span>4,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button id="beverage-four" onclick="card(this.id,this.value)" value="1">
+                        <img src="img/coquinha_gelada 1.jpg" alt="">
+                        <h2>Coquinha gelada</h2>
+                        <h3>Lata 350mL</h3>
+                        <div>
+                            <h4>R$ <span>4,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button id="beverage-five" onclick="card(this.id,this.value)" value="1">
+                        <img src="img/coquinha_gelada 1.jpg" alt="">
+                        <h2>coquinha_gelada</h2>
+                        <h3>Lata 350mL</h3>
+                        <div>
+                            <h4>R$ <span>4,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </section>
         <section>
             <h1>Por fim, sua sobremesa</h1>
-
+            <div>
+                <div>
+                    <button id="desert-one" onclick="card(this.id,this.value)" value="2">
+                        <img src="img/pudim 1.jpg" alt="">
+                        <h2>Pudim</h2>
+                        <h3>Apenas pudim</h3>
+                        <div>
+                            <h4>R$ <span>7,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button id="desert-two" onclick="card(this.id,this.value)" value="2">
+                        <img src="img/pudim 1.jpg" alt="">
+                        <h2>Pudim</h2>
+                        <h3>Apenas pudim</h3>
+                        <div>
+                            <h4>R$ <span>7,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button id="desert-three" onclick="card(this.id,this.value)" value="2">
+                        <img src="img/pudim 1.jpg" alt="">
+                        <h2>Pudim</h2>
+                        <h3>Apenas pudim</h3>
+                        <div>
+                            <h4>R$ <span>7,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button id="desert-four" onclick="card(this.id,this.value)" value="2">
+                        <img src="img/pudim 1.jpg" alt="">
+                        <h2>Pudim</h2>
+                        <h3>Apenas pudim</h3>
+                        <div>
+                            <h4>R$ <span>7,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button id="desert-five" onclick="card(this.id,this.value)" value="2">
+                        <img src="img/pudim 1.jpg" alt="">
+                        <h2>Pudim</h2>
+                        <h3>Apenas pudim</h3>
+                        <div>
+                            <h4>R$ <span>7,90</span></h4>
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
