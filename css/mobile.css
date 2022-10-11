@@ -109,7 +109,6 @@ html {
         left: 0;
         top: 100px;
         margin: 20vh 10vw;
-        height: 30vh;
         width: 80vw;
         border-radius: 9px;
         box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
@@ -120,6 +119,17 @@ html {
 
     nav a {
         width: 80%;
+        height: 100%;
+        margin: 2% 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        color: #FFFFFF;
+        cursor: pointer;
     }
 
     nav button {
@@ -169,11 +179,15 @@ html {
         border: 5px solid transparent;
     }
 
+    section h3 {
+        text-align: start;
+    }
+
     section img {
         width: 100%;
-        height: auto;
-        width: fit-content;
+        height: 87px;
         margin: 0;
+        border-radius: 4px;
     }
 
     section ion-icon {
@@ -186,6 +200,11 @@ html {
         display: flex;
         justify-content: flex-start;
         overflow: scroll;
+    }
+
+    section>div>div {
+        display: flex;
+        justify-content: center;
     }
 
     section>div>div>button {

@@ -50,6 +50,12 @@ function send() {
     total = `${total.split(".")[0]},${total.split(".")[1]}`;
     let text = `Olá, gostaria de fazer o pedido: \n - Prato: ${receipt[0]['order']}\n - Bebida: ${receipt[1]['order']} \n - Sobremesa: ${receipt[2]['order']} \n Total: R$ ${total} \n\n Nome: ${name}\n Endereço: ${address}`;
     let body = document.body;
+    let header = body.children[0];
+    let main = body.children[1];
+    let footer = body.children[2];
+    header.style.opacity = "0.1";
+    main.style.opacity = "0.1";
+    footer.style.opacity = "0.1";
     let nav = body.children[3];
     nav.style.display = 'flex';
     nav.children[1].children[0].innerText = receipt[0]['order'];
@@ -69,4 +75,16 @@ function send_bonus() {
     let nav = body.children[3];
     nav.children[5].href = wpp;
     console.log(nav.children[5]);
+}
+
+function cancel() {
+    let body = document.body;
+    let header = body.children[0];
+    let main = body.children[1];
+    let footer = body.children[2];
+    header.style.opacity = "1.0";
+    main.style.opacity = "1.0";
+    footer.style.opacity = "1.0";
+    let nav = body.children[3];
+    nav.style.display = 'none';
 }
