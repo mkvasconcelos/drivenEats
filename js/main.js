@@ -48,14 +48,16 @@ function send() {
     let total = (Number(receipt[0]['value']) + Number(receipt[1]['value']) + Number(receipt[2]['value'])).toFixed(2);
     total = `${total.split(".")[0]},${total.split(".")[1]}`;
     let text = `Olá, gostaria de fazer o pedido: \n - Prato: ${receipt[0]['order']}\n - Bebida: ${receipt[1]['order']} \n - Sobremesa: ${receipt[2]['order']} \n Total: R$ ${total} \n\n Nome: ${name}\n Endereço: ${address}`;
-    alert(text);
     let body = document.body;
-    // let footer = body.children[2];
-    // footer.children[0].children[0].href = wpp;
     let nav = body.children[3];
-    console.log(nav);
     nav.style.display = 'flex';
-    nav.children[0].innerHTML = text;
+    nav.children[1].children[0].innerText = receipt[0]['order'];
+    nav.children[1].children[1].innerText = `${receipt[0]['value'].split(".")[0]},${receipt[0]['value'].split(".")[1]}`;
+    nav.children[2].children[0].innerText = receipt[1]['order'];
+    nav.children[2].children[1].innerText = `${receipt[1]['value'].split(".")[0]},${receipt[1]['value'].split(".")[1]}`;
+    nav.children[3].children[0].innerText = receipt[2]['order'];
+    nav.children[3].children[1].innerText = `${receipt[2]['value'].split(".")[0]},${receipt[2]['value'].split(".")[1]}`;
+    nav.children[4].children[1].innerText = total;
     return text;
 }
 
