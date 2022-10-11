@@ -75,6 +75,7 @@ function send_bonus() {
     let nav = body.children[3];
     nav.children[5].href = wpp;
     console.log(nav.children[5]);
+
 }
 
 function cancel() {
