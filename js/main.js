@@ -1,5 +1,6 @@
 let cardSelect = ["", "", ""];
 let receipt = [{ "order": "", "value": 0 }, { "order": "", "value": 0 }, { "order": "", "value": 0 }];
+let finalText = "";
 
 function card(card, type) {
     let button = document.getElementById(card);
@@ -57,14 +58,15 @@ function send() {
     nav.children[2].children[1].innerText = `${receipt[1]['value'].split(".")[0]},${receipt[1]['value'].split(".")[1]}`;
     nav.children[3].children[0].innerText = receipt[2]['order'];
     nav.children[3].children[1].innerText = `${receipt[2]['value'].split(".")[0]},${receipt[2]['value'].split(".")[1]}`;
-    nav.children[4].children[1].innerText = total;
-    return text;
+    nav.children[4].children[1].innerText = `R$ ${total}`;
+    finalText = text;
 }
 
 function send_bonus() {
-    let text = send();
-    let wpp = `https://wa.me/5521965113209?text=${encodeURIComponent(text)}`;
+    let text = finalText;
+    let wpp = `https://wa.me/5521965113209?text=${encodeURI(text)}`;
     let body = document.body;
-    let footer = body.children[2];
-    footer.children[0].children[0].href = wpp;
+    let nav = body.children[3];
+    nav.children[5].href = wpp;
+    console.log(nav.children[5]);
 }

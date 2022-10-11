@@ -11,16 +11,25 @@ html {
         position: fixed;
         width: 100%;
         bottom: 0;
+        display: flex;
+        justify-content: center;
         background-color: #FFFFFF;
         height: 92px;
     }
 
+    footer a {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
     footer button {
-        font-size: 20px;
+        font-size: 18px;
         color: #FFFFFF;
         background: #CBCBCB;
         border-radius: 50px;
-        width: 364px;
+        border-style: none;
+        width: 100%;
         height: 61px;
 
     }
@@ -97,11 +106,13 @@ html {
         background-color: #50D074;
         position: fixed;
         z-index: 3;
-        top: 150px;
         left: 0;
-        margin: 0 10vw;
-        height: 60vw;
+        top: 100px;
+        margin: 20vh 10vw;
+        height: 30vh;
         width: 80vw;
+        border-radius: 9px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
         display: none;
         flex-direction: column;
         align-items: center;
@@ -115,6 +126,8 @@ html {
         width: 100%;
         height: 30px;
         border-radius: 100px;
+        border-style: none;
+        background-color: #FFFFFF;
         color: #50D074;
         font-weight: 700;
         font-family: 'Roboto';
@@ -141,10 +154,10 @@ html {
 
     nav span {
         font-family: 'Roboto';
-        font-weight: 400;
+        font-weight: 200;
         font-size: 16px;
         color: #FFFFFF;
-        margin-bottom: 3%;
+        margin-bottom: 1%;
     }
 
     section {
