@@ -25,17 +25,18 @@ Languages:<br>
 <p align="center">
 <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
-<img src=https://img.shields.io/badge/github-%23100000.svg?&style=for-the-badge&logo=github&logoColor=white/>
+<img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 </p>
 
 ### Deploy
 
 The application layout is available on Github Pages:<br>
 <a href='https://mkvasconcelos.github.io/drivenEats/' target="_blank" ><img src='https://img.shields.io/badge/github-pages%20-%23F05033.svg?&style=for-the-badge&logo=github&logoColor=white'></a>  
-<img src="/img/page1.jpg">
-<img src="/img/page2.jpg">
-<img src="/img/page3.jpg"> 
-  
+<p align="center">
+<img src="/img/page1.jpg" width="175">
+<img src="/img/page2.jpg" width="175">
+<img src="/img/page3.jpg" width="175"> 
+</p>
 
 ### Author
 ---
