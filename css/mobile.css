@@ -231,3 +231,11 @@ section>div>div>button>div {
     justify-content: space-between;
     align-items: center;
 }
+
+.opacity{
+    opacity: 0.1;
+}
+
+.nav_display{
+    display: flex;
+}
