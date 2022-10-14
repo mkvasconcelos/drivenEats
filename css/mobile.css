@@ -232,10 +232,15 @@ section>div>div>button>div {
     align-items: center;
 }
 
-.opacity{
-    opacity: 0.1;
+.button_footer{
+    background: #32B72F;
+    font-weight: 700;
 }
 
 .nav_display{
     display: flex;
+}
+
+.opacity{
+    opacity: 0.1;
 }
