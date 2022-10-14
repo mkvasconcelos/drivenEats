@@ -18,8 +18,8 @@ function card(card, type) {
     if (receipt[0]['order'] != "" & receipt[1]['order'] != "" & receipt[2]['order'] != "") {
         finish();
     }
-    button.style.border = '5px solid #32B72F';
-    icon.style.display = 'flex';
+    button.classList.toggle("card_switch");
+    icon.classList.toggle("icon_switch");
     cardSelect[type] = card;
     return cardSelect[type];
 }
@@ -28,8 +28,8 @@ function unselect(card) {
     let button = document.getElementById(card);
     let div = button.children[3];
     let icon = div.children[1];
-    button.style.border = '5px solid transparent';
-    icon.style.display = 'none';
+    button.classList.toggle("card_switch");
+    icon.classList.toggle("icon_switch");
 }
 
 function finish() {
@@ -40,17 +40,6 @@ function finish() {
     button_footer.innerHTML = "Fechar pedido";
     button_footer.disabled = false;
 }
-
-// function finish() {
-//     let body = document.body;
-//     let footer = body.children[2];
-//     let button_footer = footer.children[0].children[0].children[0];
-//     button_footer.style.background = '#32B72F';
-//     button_footer.style.border = "none";
-//     button_footer.innerHTML = "Fechar pedido";
-//     button_footer.style.fontWeight = "700";
-//     button_footer.disabled = false;
-// }
 
 function send() {
     let name = prompt("Qual seu nome?");

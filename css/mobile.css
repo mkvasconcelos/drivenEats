@@ -237,6 +237,14 @@ section>div>div>button>div {
     font-weight: 700;
 }
 
+.card_switch{
+    border: 5px solid #32B72F;
+}
+
+.icon_switch{
+    display: flex;
+}
+
 .nav_display{
     display: flex;
 }
