@@ -60,7 +60,7 @@ h2 {
 h2,
 h3,
 h4 {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial;
 }
 
 h3 {
@@ -93,7 +93,7 @@ header p {
 
 header p,
 h1 {
-    font-family: 'Righteous';
+    font-family: 'Righteous', Arial;
 }
 
 header p:nth-child(2) {
@@ -129,7 +129,7 @@ nav a {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial;
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
@@ -144,7 +144,7 @@ nav button {
     background-color: #FFFFFF;
     color: #50D074;
     font-weight: 700;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial;
     font-size: 16px;
 }
 
@@ -159,7 +159,7 @@ nav>div:nth-child(5)>span {
 }
 
 nav p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial;
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
@@ -167,7 +167,7 @@ nav p {
 }
 
 nav span {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial;
     font-weight: 200;
     font-size: 16px;
     color: #FFFFFF;
